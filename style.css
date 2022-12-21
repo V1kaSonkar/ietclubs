@@ -1,0 +1,244 @@
+* {
+    margin: -5px;
+    padding: 3px;
+    /* background-color: red; */
+
+
+}
+
+/* Navigation bar */
+/* Navigation bar */
+#logo{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+}
+#logo span{
+    color: coral;
+}
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-family: cursive;
+    justify-content: space-between;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: grey;
+    z-index: -1;
+    opacity: 0.9;
+    color: black;
+}
+
+/* navigation logo */
+#logo {
+    margin: 3px 17px;
+}
+
+/* List Stylin in navigation bar */
+ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3vw;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+#navbar ul li a:hover {
+
+    color: black;
+    background-color: white;
+}
+
+.primary1 {
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+#services {
+    margin: 13px 1px;
+    display: flex;
+    /* background-color: red; */
+}
+
+#services .box {
+    border: 2px solid revert;
+    width: 233px;
+    margin: 0px 80px;
+    background-color: rgb(245, 247, 248);
+    border-radius: 1px;
+    padding: 30px
+}
+
+#services .box img {
+    height: 207px;
+    display: block;
+    margin: auto;
+    width: 232px;
+}
+
+#services h2 {
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.service {
+    display: flex;
+}
+
+#services p {
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#services::before {
+    content: "";
+    position: absolute;
+    background-image: url('../clubs/background.avif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 651px;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+
+.btn {
+    width: 236px;
+    border: 3px solid red;
+    background-color: orange;
+    color: white;
+    margin: 4px;
+    font-size: 20px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
+#head {
+    color: white;
+}
+
+/* //creating last line */
+.member-card {
+    text-align: center;
+    padding-top: 20px;
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.member-card p {
+    margin: 20px 0px;
+    line-height: 2em;
+}
+
+/* khtm */
+
+
+.footer {
+    text-align: center;
+    background-color: white;
+    color: gray;
+}
+
+#fu {
+    height: 50px;
+}
+
+#nu {
+    padding-top: 54px;
+}
+
+.official {
+    font-size: 20px;
+    font-family: fantasy;
+    text-align: center;
+    justify-content: center;
+}
+
+.official :hover {
+    font-size: 22px;
+    color: #e74c3c;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+/* making responsive */
+
+@media only screen and (max-width: 1170px) {
+
+    /* Navigation */
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul li a {
+        font-size: 1rem;
+        padding: 0px 37px;
+        padding-bottom: 8px;
+    }
+    
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 28px; 
+    margin-bottom: 20px;
+
+}
+
+}
+@media screen and (min-width:600px) and (max-width: 1024px) {
+
+/* Services section  */
+#services{
+    flex-direction: column;
+   
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 3px 200px; 
+    margin-bottom: 20px;
+   
+}
+
+}
